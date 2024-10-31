@@ -1,0 +1,229 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: url('newyork.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: hsl(210, 30%, 95%);
+}
+
+header {
+    background: rgba(20, 20, 30, 0.8);
+    color: hsl(210, 20%, 90%);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: hsl(210, 80%, 90%);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    background: rgba(30, 30, 40, 0.9); /* Dark background for nav */
+    padding: 10px 0; /* Space around nav items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Change to flex for horizontal layout */
+    justify-content: center; /* Center items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: hsl(210, 80%, 95%);
+    text-decoration: none;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 10px 15px; /* Padding for button feel */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Transition for hover effects */
+}
+
+nav a:hover {
+    background: hwb(0 0% 21%); /* Change background on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(30, 30, 40, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 70%;
+    margin: 50px auto;
+    transition: transform 0.3s ease;
+    color: hsl(210, 20%, 85%);
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: hsl(210, 60%, 90%);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    color: hwb(46 0% 0%);
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid hsl(210, 50%, 70%);
+    border-radius: 8px;
+    width: 80%;
+    outline: none;
+    color: hsl(210, 10%, 90%);
+    background: hsl(210, 20%, 20%);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: hsl(210, 70%, 90%);
+    box-shadow: 0 0 5px hsl(210, 80%, 50%);
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: hsl(210, 80%, 95%);
+    background: hsl(210, 20%, 40%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: hwb(0 0% 100%);
+    transform: translateY(-2px);
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    background: rgba(30, 30, 45, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#weatherInfo p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: hwb(46 0% 0%);
+    text-align: left;
+}
+
+#goToActivitiesButton {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: hsl(210, 20%, 40%);
+    color: hsl(210, 80%, 95%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#goToActivitiesButton:hover {
+    background: hwb(0 2% 98%);
+    transform: translateY(-2px);
+}
+
+footer {
+    background: rgba(20, 20, 30, 0.8);
+    color: hsl(210, 20%, 90%);
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 1px;
+    color: hsl(210, 30%, 90%);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .social-icons .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .social-icons .facebook { background: #3b5998; }
+  .social-icons .twitter { background: #1da1f2; }
+  .social-icons .instagram { background: #e4405f; }
+  .social-icons .linkedin { background: #0077b5; }
+  .social-icons .youtube { background: #ff0000; }
+  
+  .social-icons .icon:hover {
+    opacity: 0.8;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.gallery-column {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-column img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.gallery-column img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-column p{
+    font-size: 1.1rem;
+    margin-bottom: 1px;
+    color: hwb(46 0% 0%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

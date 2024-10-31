@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Checklist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+    <header>
+        <h1>Checklist</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form id="activityForm">
+            <h2>Outdoor Activities</h2>
+            <input type="text" id="activityName" placeholder="Activity Name (eg: Hiking)" required>
+            <input type="text" id="equipment" placeholder="Required Equipment (eg: Hiking Shoes)" required>
+            <br><br>
+            <button type="submit">Add Activity</button>
+            <button type="button" id="cancelEdit" style="display: none;">Cancel Edit</button>
+        </form>
+        <h2>Activities List</h2>
+        <input type="text" id="searchInput" placeholder="Search for activities..." onkeyup="searchActivities()">
+        <button id="searchButton" onclick="searchActivities()">Search</button>
+        <section id="activitiesSection">
+            <div id="activitiesList">
+                <ul id="activities"></ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="icon twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="icon youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        <p>&copy; 2024 Exdra WeatherWise. All rights reserved.</p>
+    </footer>
+    <script src="crud.js"></script>
+</body>
+</html>

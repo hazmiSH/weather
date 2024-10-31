@@ -1,0 +1,197 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: url('newyork.jpg') no-repeat center center fixed; /* Use the uploaded background */
+    background-size: cover;
+    color: hsl(210, 30%, 95%); /* Light text color for readability */
+}
+
+header {
+    background: rgba(20, 20, 30, 0.8);
+    color: hsl(210, 20%, 90%);
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: hsl(210, 80%, 90%);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    background: rgba(30, 30, 40, 0.9); /* Dark background for nav */
+    padding: 10px 0; /* Space around nav items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Change to flex for horizontal layout */
+    justify-content: center; /* Center items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: hsl(210, 80%, 95%);
+    text-decoration: none;
+    font-size: 1.2rem; /* Increase font size */
+    padding: 10px 15px; /* Padding for button feel */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Transition for hover effects */
+}
+
+nav a:hover {
+    background: hwb(0 0% 21%); /* Change background on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(30, 30, 40, 0.9); /* Dark overlay for readability */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(210, 20%, 85%);
+    transition: transform 0.3s ease;
+    padding-right: 10px;
+    padding-left: 10px;  
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h1, h2 {
+    color: hsl(210, 60%, 90%); /* Cool blue for headers */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid hsl(210, 50%, 70%); /* Cool blue border */
+    border-radius: 8px;
+    width: 80%;
+    outline: none;
+    background: hsl(210, 20%, 20%); /* Dark background for input */
+    color: hsl(210, 10%, 90%);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: hsl(210, 70%, 90%);
+    box-shadow: 0 0 5px hsl(210, 80%, 50%); /* Light glow */
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: hsl(210, 80%, 95%);
+    background: hsl(210, 20%, 40%); /* Dark cool blue for buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: hwb(0 0% 100%);
+    transform: translateY(-2px);
+}
+
+#activitiesList {
+    margin-top: 20px;
+}
+
+#activities {
+    list-style-type: none;
+    padding: 0;
+}
+
+#activities li {
+    background: #b4a8a86b; /* Light overlay background for list items */
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(210, 20%, 85%); 
+    padding-top: 5px ;
+    padding-bottom: 10px;
+
+}
+
+button.edit, button.delete {
+    margin-left: 5px;
+    background: hsl(210, 30%, 50%); /* Medium cool blue for action buttons */
+    color: hsl(210, 80%, 95%);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.edit:hover, button.delete:hover {
+    background: rgb(202, 0, 0); /* Darker blue on hover */
+}
+
+footer {
+    background: rgba(20, 20, 30, 0.8);
+    color: hsl(210, 20%, 90%);
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 1px;
+    color: hsl(210, 30%, 90%);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .social-icons .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .social-icons .facebook { background: #3b5998; }
+  .social-icons .twitter { background: #1da1f2; }
+  .social-icons .instagram { background: #e4405f; }
+  .social-icons .linkedin { background: #0077b5; }
+  .social-icons .youtube { background: #ff0000; }
+  
+  .social-icons .icon:hover {
+    opacity: 0.8;
+  }
+  
